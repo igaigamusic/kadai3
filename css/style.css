@@ -1,0 +1,272 @@
+* {
+	box-sizing: border-box;
+ }
+ 
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #e6e6e6;
+ }
+
+/* ヘッダーの装飾 */
+header {
+	width: 100%;
+    padding: 30px 4% 10px;
+    background-color: #fff;
+	/* ヘッダーの透過率を調整 */
+	opacity: 0.7;
+	/* position: fixedでは上が重なった */
+	position: sticky; 
+    top: 0;
+	display: flex;
+    align-items: center;
+}
+
+h1 {
+	margin: 10; padding: 10;
+	font-size: 20px;
+	font-weight: bold;
+}
+ 
+a {	
+	text-decoration: none;
+	color: darkcyan;
+}
+
+.navi-bar {
+	list-style: none;
+	margin: 20px;
+	display: flex;
+}
+
+.navi {
+	margin: 0 0 0 50px;
+	font-size: 14px;
+}
+
+nav {
+	margin: 0 0 0 auto;
+	font-size: 21px;
+}
+
+.hiraku-list{
+	list-style: none;
+}
+
+
+
+.container {
+	height: 600px;
+	background-image: url(../images/top_img.jpg);
+	background-size: 100% auto;
+	background-position: center;
+    background-repeat: no-repeat;
+	margin: auto;
+	padding: 0%;
+}
+
+/* ここからmainの中身を装飾 */
+/* フォントサイズの指定 */
+/* ABOUTなどは24px太字 */
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 18px;
+	text-align: center;
+}
+
+p {
+	font-size: 16px;
+	text-align: center;
+}
+
+.about {
+	text-align: center;
+	margin-top: 60px;
+}
+
+.s1 {
+	margin: 40px;
+}
+
+.activity {
+	text-align: center;
+}
+
+.pics {
+	display: flex;
+	gap: 30px;
+	padding: 40px 0;
+}
+
+.pics_cards {
+ 	width: 33%;
+}
+
+.pics-list {
+	list-style: none;
+	margin: 0;
+	padding: 0 auto;
+	display: flex;
+}
+ 
+.pics_item {
+	width: 100%;
+	height: auto;
+	/* width: 100%;
+	height: 300px; */
+	object-fit: cover; /* width, heightといっしょに使います */
+}
+
+ /* dfでFlexbox使って横並びにする */
+.field {
+	display: flex;
+	gap: 30px;
+	padding: 40px 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* ニュースのレイアウト */
+.news-list {
+	list-style: none;
+	margin: 0;
+	display: flex;
+}
+
+.news_cards {
+	text-align: center;
+	padding: 0px 10px;
+	transition: .3s;
+}
+
+.news_cards:hover {
+	transform: scale(1.1);
+}
+
+.news_item {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.news-more {
+	width: 300px; /* 横幅指定 */
+	height: 60px;
+	background-color: darkcyan; /* 背景色 */
+	color: #fff; /* 文字色 */
+	font-weight: bold; /* 文字の太さ */
+	display: block; /* インライン要素をブロック要素に変更 */
+	margin: 0 auto; /* 中央寄せ */
+	font-size: 18px; /* 文字の大きさ */
+	padding: 15px; /* 内側の余白 */
+	border: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.news-more:hover {
+	background: cyan;
+}
+
+/* MAPのレイアウト */
+.access {
+	text-align: center;
+	margin-top: 60px;
+}
+
+.min {
+	font-size: 12px;
+}
+
+/* 問い合わせフォームのレイアウト */
+.contact {
+	width: 600px;/*横幅*/
+	margin: 0 auto;/*中央寄せ*/
+	padding: 60px 0;
+	margin-bottom: 140px;
+}
+
+.contact-ttl{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-align: center;
+  }
+
+.contact-table {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.contact-item,
+.contact-body {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.contact-item {
+  text-align: left; /* テキスト左寄せ */
+  width: 30%; /* 横幅30%指定（グレーの背景色部分） */
+  background-color: #eee; /* グレーの背景色 */
+}
+
+.contact-body {
+  width: 70%; /* 横幅70%指定（白背景色部分） */
+}
+
+.form-text {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	max-width: 400px;
+}
+
+.contact-submit {
+	width: 300px; /* 横幅指定 */
+	height: 60px;
+	background-color: #333; /* 背景色 */
+	color: #fff; /* 文字色 */
+	font-weight: bold; /* 文字の太さ */
+	display: block; /* インライン要素をブロック要素に変更 */
+	margin: 0 auto; /* 中央寄せ */
+	font-size: 18px; /* 文字の大きさ */
+	padding: 15px; /* 内側の余白 */
+	border: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+}
+
+.contact-submit:hover {
+	opacity: 0.6;
+}
+
+/******* ここからフッターのスタイル ********/
+footer {
+    width: auto;
+	background-color: paleturquoise;
+    padding:30px 0 30px 0;
+}
+
+footer p {
+    font-size: 16px;
+    color: black;
+    max-width: 1200px;
+    padding: 0;
+    text-align:center;
+    margin:0 auto;
+}

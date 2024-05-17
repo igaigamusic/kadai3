@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ホーム｜Medtech Marvels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="医師の医師による医師のための働き方改革">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/hiraku.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/hiraku.js"></script>
+</head>
+<body>
+    <!-- ヘッダーを作成 -->
+      <header class="header">
+        <h1 id="home_btn">
+            <a href="./index.html">Medtech Marvels</a>
+        </h1>
+        <nav class="pc-navi">
+            <ul class="navi-bar">
+            <li class="navi">
+              <a href="#about">ABOUT</a>
+            </li>
+            <li class="navi">
+              <a href="#activity">NEWS</a>
+            </li>
+            <li class="navi">
+              <a href="#access">ACCESS</a>
+            </li>
+            <li class="navi">
+              <a href="#form">CONTACT</a>
+            </li>
+            </ul>
+        </nav>
+
+        <!-- プラグインhirakuを設定 -->
+        <button class="hiraku-open-btn" id="offcanvas-btn-right" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
+          <span class="hiraku-open-btn-line"></span>
+        </button>
+        <div class="offcanvas-right">
+          <ul class="hiraku-list">
+            <li class="hiraku">
+              <a href="#about">ABOUT</a>
+            </li>
+            <li class="hiraku">
+              <a href="#activity">NEWS</a>
+            </li>
+            <li class="hiraku">
+              <a href="#access">ACCESS</a>
+            </li>
+            <li class="hiraku">
+              <a href="#form">CONTACT</a>
+            </li>
+            </ul>
+        </div>
+    </header>
+
+    
+    
+
+  <main>
+    
+      <div class="container"></div>
+    
+      <section class="about">
+      
+        <div>
+          <h3>
+            <a id="about">ABOUT</a>
+          </h3>
+          <h5>Medtech Marvelsのビジョン</h5>
+          <p>日本の大病院から長時間労働をなくす！</p>
+        </div>
+
+        <div class="s1">
+          <p>私たちは専門の異なる医師3名とプログラマ1名で構成されるチームです</p>
+          <p>医師の医師による医師のための働き方改革を目指してプロダクト開発しています</p>
+          <div class="pics">
+            <ul class="pics-list">
+              <li class="pics_cards"><img src="./images/Igarashi_pic.png" alt="Igarashi" class="pics_item"></li>
+              <li class="pics_cards"><img src="./images/Kasukabe_pic.jpg" alt="Kasukabe" class="pics_item"></li>
+              <li class="pics_cards"><img src="./images/Kodera_pic.jpg" alt="Kodera" class="pics_item"></li>
+            </ul>
+          </div>
+        </div>
+
+
+
+      </section>
+        
+
+      <section class="activity">
+        <h3><a id="activity">NEWS</a></h3>
+        <h5>ニュース</h5>
+        <p>全国のビジネスプランコンテストやインキュベーションプログラムに参加しています</p>
+        <!-- Flexboxを使って横並びにする -->
+        <div class="field">
+          <ul class="news-list">
+            <div class="news_margin">
+              <li class="news_cards">
+                <img src="./images/STAPS_Igarashi.jpg" alt="STAPS" class="news_item">
+                <p>2024/3/17</p>
+                <p>名古屋で開催された<br>STATION Ai for Studentsで<br>優秀賞を受賞しました！</p>
+              </li>
+            </div>
+
+            <div class="news_margin">
+              <li class="news_cards">
+                <img src="./images/JstarX_Igarashi_pitch.jpg" alt="JstarX_Igarashi_pitch" class="news_item">
+                <p>2023/12/15</p>
+                <p>シリコンバレーで開催された<br>J-StarX地域起業家上級コースの<br>最終ピッチを行いました</p>
+              </li>
+            </div>
+
+            <div class="news_margin">
+              <li class="news_cards">
+                <img src="./images/JstarX_Stanford.jpg" alt="JStarX_logo" class="news_item">
+                <p>2023/12/3～16</p>
+                <p>経済産業省主催の<br>J-StarX地域起業家上級コースに採択され<br>シリコンバレー派遣に参加しました</p>
+              </li>
+            </div>
+
+          </ul>  
+        </div>
+        <a href="#"><input class="news-more" type="submit" value="MORE" /></a>
+      </section>
+
+    <!-- iframeでGoogle Mapを埋め込み（非公式） -->
+      <section class="access">
+        <h3><a id="access">ACCESS</a></h3>
+        <p>団体情報</p>
+        <iframe src="https://maps.google.co.jp/maps?output=embed&q=東北大学病院" width="600" height="300" frameborder="0"></iframe>
+
+        <div class="address">
+          <p>団体名　　　Medtech Marvels</p>
+          <p>所在地　　　宮城県仙台市青葉区星陵町1－1</p>
+          <p>連絡先　　　hogehoge@medtechmarvels.com</p>
+          <p class="min">（弊団体は法人化前ですので、問い合わせは五十嵐個人までお願いします）</p>
+
+        </div>
+    
+      </section>
+    
+    <!-- 問い合わせフォームを作る -->
+      <div class="contact">
+        <h3 class="contact-ttl">
+          <a id="form">CONTACT</a>
+        </h3>
+        <p>お問い合わせ<p>
+        <form action="">
+            <table class="contact-table">
+              <tr>
+                <th class="contact-item">お名前</th>
+                <td class="contact-body">
+                  <input type="text" name="名前" class="form-text" required/>
+                </td>
+              </tr>
+              <tr>
+                <th class="contact-item">カナ</th>
+                <td class="contact-body">
+                  <input type="text" name="カナ" class="form-text" required/>
+                </td>
+              </tr>
+              </tr>
+              <tr>
+                <th class="contact-item">メールアドレス</th>
+                <td class="contact-body">
+                  <input type="email" name="メールアドレス" class="form-text" required/>
+                </td>
+              </tr>
+              <tr>
+                <th class="contact-item">電話</th>
+                <td class="contact-body">
+                  <input type="tel" name="電話" class="form-text" required/>
+                </td>
+              </tr>
+              <tr>
+                <th class="contact-item">職業</th>
+                <td class="contact-body">
+                  <select name="職業" class="form-select">
+                    <option>選択</option>
+                    <option>企業</option>
+                    <option>投資家</option>
+                    <option>学生</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th class="contact-item">問い合わせ内容</th>
+                <td class="contact-body">
+                  <label class="contact-cont">
+                    <input type="checkbox" name="問い合わせ内容" />
+                    <span class="contact-cont-txt">プロダクト</span>
+                  </label>
+                  <label class="contact-cont">
+                    <input type="checkbox" name="問い合わせ内容" />
+                    <span class="contact-cont-txt">共同開発</span>
+                  </label>
+                  <label class="contact-cont">
+                    <input type="checkbox" name="問い合わせ内容" />
+                    <span class="contact-cont-txt">資金調達</span>
+                  </label>
+                  <label class="contact-cont">
+                    <input type="checkbox" name="問い合わせ内容" />
+                    <span class="contact-cont-txt">その他</span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th class="contact-item">詳細</th>
+                <td class="contact-body">
+                  <textarea name="詳細" class="form-textarea"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <th class="contact-item">プライバシーポリシーに</th>
+                <td class="contact-body">
+                  <input type="checkbox" name="privacypolicy" />
+                  <span class="agree">同意する</span>
+                </td>
+            </table>  
+            <a href="#"><input class="contact-submit" type="submit" value="送信"/></a>
+        </form>
+      </div>
+
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    new Hiraku(".offcanvas-right", {
+      btn: "#offcanvas-btn-right",
+      fixedHeader: "#header",
+      direction: "right"
+    });    
+  </script>
+
+    <!-- フッターを作成 -->
+    <footer class="footer">
+        <p>Copyright© 2024 Medtech Marvels. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
